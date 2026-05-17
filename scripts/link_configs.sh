@@ -45,19 +45,18 @@ if command -v fish &>/dev/null; then
   fish -c "fisher update" 2>/dev/null || true
 fi
 
-log "Nerd Fonts (JetBrainsMono) for Ghostty"
+log "Installing Fira Code + Fira Code Nerd Font"
 if [[ "$(uname -s)" == "Darwin" ]]; then
-  brew tap homebrew/cask-fonts 2>/dev/null || true
-  brew install --cask font-jetbrains-mono-nerd-font 2>/dev/null || true
+  brew install --cask font-fira-code font-fira-code-nerd-font 2>/dev/null || true
 else
   FONT_DIR="$HOME/.local/share/fonts"
   mkdir -p "$FONT_DIR"
-  if ! fc-list | grep -qi "JetBrainsMono Nerd"; then
-    FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz"
-    curl -Lo /tmp/JetBrainsMono.tar.xz "$FONT_URL"
-    tar -xJf /tmp/JetBrainsMono.tar.xz -C "$FONT_DIR"
+  if ! fc-list | grep -qi "Fira Code"; then
+    curl -Lo /tmp/FiraCode.tar.xz \
+      "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.tar.xz"
+    tar -xJf /tmp/FiraCode.tar.xz -C "$FONT_DIR"
     fc-cache -f "$FONT_DIR"
-    rm /tmp/JetBrainsMono.tar.xz
+    rm /tmp/FiraCode.tar.xz
   fi
 fi
 

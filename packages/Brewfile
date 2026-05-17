@@ -57,3 +57,5 @@ cask "ghostty"               # GPU-accelerated terminal
 cask "visual-studio-code"
 cask "postman"
 cask "tableplus"             # DB GUI
+cask "font-fira-code-nerd-font"
+cask "font-fira-code"

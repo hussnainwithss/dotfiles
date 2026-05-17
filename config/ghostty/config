@@ -1,7 +1,7 @@
 # Ghostty config — ~/.config/ghostty/config
 
 # ── Font ──────────────────────────────────────────────────────────────────────
-font-family = "JetBrainsMono Nerd Font"
+font-family = "FiraCode Nerd Font"
 font-size = 14
 font-feature = calt
 font-feature = liga
