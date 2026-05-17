@@ -36,7 +36,7 @@ ln -sfn "$CONFIG_DST/tmux/tmux.conf" "$HOME/.tmux.conf" 2>/dev/null || true
 link "$CONFIG_SRC/git/gitconfig"         "$HOME/.gitconfig"
 link "$CONFIG_SRC/git/gitconfig_work"    "$CONFIG_DST/git/gitconfig_work"
 link "$CONFIG_SRC/git/gitignore_global"  "$CONFIG_DST/git/gitignore_global"
-mkdir -p "$HOME/personal" "$HOME/work"
+mkdir -p "$HOME/projects/personal" "$HOME/projects/work"
 
 log "Installing TPM (tmux plugin manager)"
 TPM_DIR="$HOME/.tmux/plugins/tpm"

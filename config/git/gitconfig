@@ -45,5 +45,5 @@
 	insteadOf = https://github.com/
 
 # Work directory → GitLab identity
-[includeIf "gitdir:~/work/"]
+[includeIf "gitdir:~/projects/work/"]
 	path = ~/.config/git/gitconfig_work
