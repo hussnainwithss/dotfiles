@@ -1,0 +1,49 @@
+[user]
+	name = hussnainwithss
+	email = hussnainwithss@gmail.com
+
+[github]
+	user = hussnainwithss
+
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesfile = ~/.config/git/gitignore_global
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoStash = true
+
+[merge]
+	ff = only
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = zebra
+
+[color]
+	ui = auto
+
+[alias]
+	st  = status
+	co  = checkout
+	br  = branch
+	lg  = log --oneline --graph --decorate -20
+	undo = reset HEAD~1 --mixed
+	wip  = !git add -A && git commit -m 'wip'
+	sync = !git pull --rebase && git push
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+# Work directory → GitLab identity
+[includeIf "gitdir:~/work/"]
+	path = ~/.config/git/gitconfig_work

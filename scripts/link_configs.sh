@@ -30,8 +30,13 @@ link "$CONFIG_SRC/ghostty/config"     "$CONFIG_DST/ghostty/config"
 
 # tmux
 link "$CONFIG_SRC/tmux/tmux.conf"     "$CONFIG_DST/tmux/tmux.conf"
-# also support legacy path
 ln -sfn "$CONFIG_DST/tmux/tmux.conf" "$HOME/.tmux.conf" 2>/dev/null || true
+
+# git
+link "$CONFIG_SRC/git/gitconfig"         "$HOME/.gitconfig"
+link "$CONFIG_SRC/git/gitconfig_work"    "$CONFIG_DST/git/gitconfig_work"
+link "$CONFIG_SRC/git/gitignore_global"  "$CONFIG_DST/git/gitignore_global"
+mkdir -p "$HOME/personal" "$HOME/work"
 
 log "Installing TPM (tmux plugin manager)"
 TPM_DIR="$HOME/.tmux/plugins/tpm"

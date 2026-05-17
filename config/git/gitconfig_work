@@ -1,0 +1,6 @@
+[user]
+	name = Hussnain Ahmad
+	email = hussnain.ahmad@tweeq.sa
+
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/

@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# env files
+.env
+.env.*
+!.env.example
+
+# logs / deps / build artifacts
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+.next/
+.nuxt/
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# secrets
+*.pem
+*.key
+*.p12
