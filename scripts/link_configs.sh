@@ -32,6 +32,11 @@ link "$CONFIG_SRC/ghostty/config"     "$CONFIG_DST/ghostty/config"
 link "$CONFIG_SRC/tmux/tmux.conf"     "$CONFIG_DST/tmux/tmux.conf"
 ln -sfn "$CONFIG_DST/tmux/tmux.conf" "$HOME/.tmux.conf" 2>/dev/null || true
 
+# ssh
+mkdir -p "$HOME/.ssh"
+link "$CONFIG_SRC/ssh/config" "$HOME/.ssh/config"
+chmod 600 "$HOME/.ssh/config"
+
 # git
 link "$CONFIG_SRC/git/gitconfig"         "$HOME/.gitconfig"
 link "$CONFIG_SRC/git/gitconfig_work"    "$CONFIG_DST/git/gitconfig_work"
