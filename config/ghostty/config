@@ -1,0 +1,40 @@
+# Ghostty config — ~/.config/ghostty/config
+
+# ── Font ──────────────────────────────────────────────────────────────────────
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+font-feature = calt
+font-feature = liga
+
+# ── Theme ─────────────────────────────────────────────────────────────────────
+theme = catppuccin-mocha
+
+# ── Cursor ────────────────────────────────────────────────────────────────────
+cursor-style = bar
+cursor-style-blink = true
+
+# ── Window ────────────────────────────────────────────────────────────────────
+window-padding-x = 12
+window-padding-y = 8
+window-decoration = true
+macos-titlebar-style = hidden
+
+# ── Shell ─────────────────────────────────────────────────────────────────────
+# Ghostty auto-detects the default shell; uncomment to override:
+# shell-integration = fish
+# command = /opt/homebrew/bin/fish
+
+# ── Scrollback ────────────────────────────────────────────────────────────────
+scrollback-limit = 10000
+
+# ── Keybinds ──────────────────────────────────────────────────────────────────
+keybind = cmd+t=new_tab
+keybind = cmd+w=close_surface
+keybind = cmd+shift+[=previous_tab
+keybind = cmd+shift+]=next_tab
+keybind = cmd+enter=toggle_fullscreen
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+copy-on-select = true
+mouse-hide-while-typing = true
+confirm-close-surface = false

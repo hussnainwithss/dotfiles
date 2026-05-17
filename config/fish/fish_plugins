@@ -1,0 +1,8 @@
+# fish_plugins — managed by fisher (jorgebucaran/fisher)
+# Run: fisher update  (after fisher is installed by bootstrap)
+jorgebucaran/fisher
+jorgebucaran/nvm.fish
+PatrickF1/fzf.fish
+franciscolourenco/done
+jethrokuan/z
+nickeb96/puffer-fish

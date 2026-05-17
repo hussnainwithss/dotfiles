@@ -1,0 +1,59 @@
+# Brewfile — macOS packages (brew bundle --file=packages/Brewfile)
+
+# ── Core CLI ───────────────────────────────────────────────────────────────────
+brew "git"
+brew "gh"                    # GitHub CLI
+brew "curl"
+brew "wget"
+brew "jq"
+brew "yq"
+brew "fzf"
+brew "ripgrep"               # rg
+brew "fd"
+brew "bat"                   # cat replacement
+brew "eza"                   # ls replacement
+brew "zoxide"                # z / cd replacement
+brew "starship"              # cross-shell prompt
+brew "fish"                   # fish shell
+brew "tmux"
+brew "tpm"                    # tmux plugin manager (via brew)
+brew "neovim"
+brew "htop"
+brew "make"
+brew "zsh"
+brew "tree"
+brew "watchman"
+brew "direnv"
+
+# ── Runtimes (managed via version managers in runtimes.sh) ────────────────────
+brew "nvm"
+brew "pyenv"
+brew "uv"                    # fast Python package manager
+brew "go"
+brew "rustup"
+
+# ── DevOps / Containers ────────────────────────────────────────────────────────
+brew "docker-compose"
+brew "kubectl"
+brew "helm"
+brew "k9s"
+brew "minikube"
+brew "go-task"               # Taskfile runner (task)
+brew "terraform"
+brew "pulumi"
+
+# ── Cloud CLIs ─────────────────────────────────────────────────────────────────
+brew "awscli"
+brew "azure-cli"
+brew "google-cloud-sdk"
+
+# ── Database clients ───────────────────────────────────────────────────────────
+brew "postgresql@16"
+brew "redis"
+
+# ── GUI Apps (casks) ──────────────────────────────────────────────────────────
+cask "docker"                # Docker Desktop
+cask "ghostty"               # GPU-accelerated terminal
+cask "visual-studio-code"
+cask "postman"
+cask "tableplus"             # DB GUI
